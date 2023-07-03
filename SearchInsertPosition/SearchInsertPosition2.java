@@ -1,11 +1,11 @@
-package SearchInsertPosition;
+package Training2.SearchInsertPosition;
 
 public class SearchInsertPosition2 {
     public static void main(String[] args) {
         int [] nums = {1,3,5,6};
         int target=5;
 
-        SearchInsertPosition s = new SearchInsertPosition();
+        SearchInsertPosition2 s = new SearchInsertPosition2();
 
         System.out.println(s.searchInsert(nums, target));
 
