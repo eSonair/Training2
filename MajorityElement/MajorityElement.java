@@ -1,4 +1,4 @@
-package Training2;
+package Training2.MajorityElement;
 
 
 /*
@@ -76,6 +76,6 @@ public class MajorityElement {
         result=maxNr;
 
         return result;
-    }//Ende Methode MajorityElement
+    }//Ende Methode Training2.MajorityElement.MajorityElement
 
-}//Ende Klasse MajorityElement
+}//Ende Klasse Training2.MajorityElement.MajorityElement
