@@ -1,5 +1,8 @@
 package Training2.MajorityElement;
 
+
+//Duration: 5 min.
+
 import java.util.Arrays;
 
 public class MajorityElement1 {
