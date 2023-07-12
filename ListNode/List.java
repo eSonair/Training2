@@ -1,3 +1,7 @@
+package Training2.ListNode;
+
+import Training2.ListNode.ListNode;
+
 public class List<T> {
     ListNode root;
 

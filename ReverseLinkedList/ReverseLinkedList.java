@@ -5,27 +5,27 @@ public class ReverseLinkedList <T> {
     ListNode root;
 
 
-    ReverseLinkedList(T... elements) {
-        root=new ListNode(elements[0]);
-        ListNode current=root;
-        ListNode temp;
-        for(int i=1;i<elements.length;i++) {
-            temp=new ListNode(elements[i]);
-            current.next=temp;
-            current=current.next;
-        }
-    }//Ende Methode List
-
 
 
     public static void main(String[] args) {
         ListNode current;
-        ReverseLinkedList<Integer> reverseList = new ReverseLinkedList<>(1, 2, 8);
+        ReverseLinkedList<Integer> reverseList = new ReverseLinkedList<Integer>(1, 2, 8);
 
         reverseList.print();
 
     }//Ende Methode Main
 
+
+    ReverseLinkedList(T... elements) {
+        root=new ListNode((Integer) elements[0]);
+        ListNode current=root;
+        ListNode temp;
+        for(int i=1;i<elements.length;i++) {
+            temp=new ListNode((Integer) elements[i]);
+            current.next=temp;
+            current=current.next;
+        }
+    }//Ende Methode List
 
 
 
