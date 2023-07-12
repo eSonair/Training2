@@ -2,13 +2,10 @@ package Training2.ReverseLinkedList;
 
 public class ReverseLinkedList <T> {
 
-    ListNode root;
-
-
+    ListNode previous;
 
 
     public static void main(String[] args) {
-        ListNode current;
         ReverseLinkedList<Integer> reverseList = new ReverseLinkedList<Integer>(1, 2, 8);
 
         reverseList.print();
@@ -17,13 +14,13 @@ public class ReverseLinkedList <T> {
 
 
     ReverseLinkedList(T... elements) {
-        root=new ListNode((Integer) elements[0]);
-        ListNode current=root;
+        previous=new ListNode((Integer) elements[elements.length-1]);
+        ListNode current=previous;
         ListNode temp;
-        for(int i=1;i<elements.length;i++) {
+        for(int i=elements.length-2;i>=0;i--) {
             temp=new ListNode((Integer) elements[i]);
-            current.next=temp;
-            current=current.next;
+            current.previous=temp;
+            current=current.previous;
         }
     }//Ende Methode ReverseLinkedList
 
@@ -32,10 +29,11 @@ public class ReverseLinkedList <T> {
     public void print()
     {
         System.out.println("Print: " );
-        ListNode current = this.root;
-        while(current!=null){
+        ListNode current = this.previous;
+
+        while(previous!=null){
             System.out.println(current.val);
-            current = current.next;
+            current = current.previous;
         }
 
 

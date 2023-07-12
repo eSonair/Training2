@@ -2,10 +2,11 @@ package Training2.ReverseLinkedList;
 
 public class ListNode {
     public int val;
-    public ListNode next;
+    public ListNode previous;
+
 
     public ListNode(int val) {
         this.val = val;
-        this.next = null;
+        this.previous = null;
     }
 }//Ende Klasse ListNode
