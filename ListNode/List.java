@@ -6,22 +6,14 @@ public class List<T> {
     ListNode root;
 
     List(T... elements) {
-
-        // TODO
-        /*ListNode lN = new ListNode(elements[0]);
-        this.root =lN;
-
-        for (int i=1; i<elements.length;i++){
-            if(i<elements.length-1){
-
-                ListNode name = new ListNode(elements[i]);
-                name.next=new ListNode(elements[i+1]);
-            }
-            else{
-                ListNode name = new ListNode(elements[i]);
-            }
-
-        }*/
+        root=new ListNode( elements[0]);
+        ListNode current=root;
+        ListNode temp;
+        for(int i=1;i<elements.length;i++) {
+            temp=new ListNode((Integer) elements[i]);
+            current.next=temp;
+            current=current.next;
+        }
     }
 
     void print() {

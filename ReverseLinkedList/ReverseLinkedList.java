@@ -25,7 +25,7 @@ public class ReverseLinkedList <T> {
             current.next=temp;
             current=current.next;
         }
-    }//Ende Methode List
+    }//Ende Methode ReverseLinkedList
 
 
 
