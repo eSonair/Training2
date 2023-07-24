@@ -1,4 +1,6 @@
 package Training2.ReverseLinkedList;
+// 2 weeks....
+
 
 public class ReverseLinkedList <T> {
 
@@ -25,18 +27,15 @@ public class ReverseLinkedList <T> {
     }//Ende Methode ReverseLinkedList
 
 
-
     public void print()
     {
         System.out.println("Print: " );
         ListNode current = this.previous;
 
-        while(previous!=null){
+        while(current!=null){
             System.out.println(current.val);
             current = current.previous;
         }
-
-
     }//Ende Methode print
 
 
