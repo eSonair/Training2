@@ -25,7 +25,7 @@ public class Friedhof {
 
 
     /*
-    IsomorphicStrings
+    StringShifter
 
     System.out.println("a:" + (int) 'a');
     System.out.println("z:" + (int) 'z');   //122
