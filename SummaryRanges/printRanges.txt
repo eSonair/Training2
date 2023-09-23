@@ -1,0 +1,23 @@
+    public String printRanges(int[] nums) {
+        String returnStr = "";
+        if(nums.length == 0) {
+            return "";
+        }
+        if(nums.length == 1) {
+            return ""+nums[0];
+        }
+
+        boolean range=false;
+        for(int i=1;i<nums.length;i++) {
+            if(nums[i-1]+1 == nums[i]) {
+                if(!range) {
+                    range=true;
+                    returnStr += nums[i-1] + "->";
+                }
+            } else {
+                range=false;
+                returnStr += nums[i-1] + ",";
+            }
+        }
+        return returnStr + nums[nums.length-1];
+    }
