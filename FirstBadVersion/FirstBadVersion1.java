@@ -45,7 +45,7 @@ public class FirstBadVersion1 {
             int high = n;
 
             while (low <= high) {
-                int mid = low + (high - low) / 2; // Avoid potential overflow
+                int mid = (high - low) + low / 2; // Avoid potential overflow
 
                 if (isBadVersion(mid)) {
                     high = mid - 1; // Set high to mid - 1 to search in the left half

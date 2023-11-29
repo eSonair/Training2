@@ -13,7 +13,7 @@ public class ExcelSheetColumnNumber2 {
         //A=65
         //Z=90
 
-        String string="ZY";
+        String string="YZ";
 
 
         System.out.println(eX.titleToNumber(string));
